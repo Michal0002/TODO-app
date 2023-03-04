@@ -4,9 +4,9 @@
 #
 #  id          :integer          not null, primary key
 #  description :text
-#  due_date    :datetime
+#  due_date    :date
 #  priority    :integer
-#  status      :boolean
+#  status      :integer          default("in_progress")
 #  title       :string
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null

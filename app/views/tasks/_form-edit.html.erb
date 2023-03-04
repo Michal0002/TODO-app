@@ -39,3 +39,7 @@
     <%= form.submit %>
   </div>
 <% end %>
+       <%= form_for task, method: :patch do |f| %>
+  <%= f.select :status, options_for_select(Task.statuses.keys.map { |s| [s.humanize, s] }, task.status), {}, class: "form-control" %>
+  <%= f.submit "Save", class: "btn btn-primary" %>
+<% end %>

@@ -3,8 +3,8 @@ class TasksController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @tasks = current_user.tasks
-
+    @tasks = current_user.tasks.all
+    @count = Task.count
   end
 
   def show
