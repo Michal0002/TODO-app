@@ -16,7 +16,7 @@ gem "bootsnap", require: false
 gem "devise"
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 gem 'jquery-rails'
-
+gem 'annotate'
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
