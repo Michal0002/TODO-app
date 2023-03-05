@@ -10,6 +10,7 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+![6](https://user-images.githubusercontent.com/44274110/222985258-8cf481c7-7d8a-43b5-9394-ee01a917de2f.png)
 
 * Database creation
 
