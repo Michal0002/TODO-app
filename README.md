@@ -14,3 +14,8 @@ With Todo application, you can:   \
 	* additionally, we can define task priorities - which one is more important to us (low, medium, hard)   \
 *  deleting a task is tantamount to changing its status to canceled - the data in the line will be deleted.   \
 ![6](https://user-images.githubusercontent.com/44274110/222985810-ab4ac1b1-52c5-4973-961f-b10a67abe488.png)
+
+STACK: 
+*Ruby with Rails framework
+*Bootstrap
+*SQLite
