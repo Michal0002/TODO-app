@@ -1,6 +1,8 @@
-<%= form_with(model: task) do |form| %>
+<div class="container">
+
+<%= form_with(model: task, class: 'row g-3') do |form| %>
   <% if task.errors.any? %>
-    <div style="color: red">
+    <div class="col-12" style="color: red">
       <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
 
       <ul>
@@ -11,31 +13,32 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="col-md-6">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+  <div class="col-md-6">
+    <%= form.label :description, class: "form-label" %>
+    <%= form.text_area :description, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :due_date, style: "display: block" %>
-    <%= form.date_field  :due_date %>
+  <div class="col-md-6">
+    <%= form.label :due_date, class: "form-label" %>
+    <%= form.date_field :due_date, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :priority, style: "display: block" %>
-<%= form.select :priority, options_for_select(Task.priorities.keys.map { |priority| [priority.humanize, priority] }) %>
+  <div class="col-md-6">
+    <%= form.label :priority, class: "form-label" %>
+    <%= form.select :priority, options_for_select(Task.priorities.keys.map { |priority| [priority.humanize, priority] }), {include_blank: true}, class: "form-select" %>
   </div>
 
-  <div>
-    <%= form.hidden_field :user_id, value: current_user.id %>
-  </div>
+  <%= form.hidden_field :user_id, value: current_user.id %>
 
-  <div>
-    <%= form.submit %>
+  <div class="col-12 text-center">
+    <%= form.submit "Save Task", class: "btn btn-info" %>
+    <%= link_to "Back to tasks", tasks_path, class: "btn btn-secondary"  %>
+
   </div>
 <% end %>
+</div>
