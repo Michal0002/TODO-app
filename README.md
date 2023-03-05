@@ -17,5 +17,8 @@ With Todo application, you can:
 
 STACK: 
 * Ruby with Rails framework
+	* gems used:
+		* devise
+		* annotate
 * Bootstrap
 * SQLite
