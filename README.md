@@ -1,25 +1,13 @@
-# README
+# Todo App
+   \
+The Todo app helps you be more productive, relieve memory and reduce stress by easily planning your day and organizing your life.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+With Microsoft To Do, you can:
+	* login/registration (each user has their own todo list)
 
-Things you may want to cover:
+	* adding, editing and deleting new tasks
+ 
+	    * additionally, we can define task priorities - which one is more important to us (low, medium, hard)
 
-* Ruby version
+    	*  deleting a task is tantamount to changing its status to canceled - the data in the line will be deleted.
 
-* System dependencies
-
-* Configuration
-![6](https://user-images.githubusercontent.com/44274110/222985258-8cf481c7-7d8a-43b5-9394-ee01a917de2f.png)
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
